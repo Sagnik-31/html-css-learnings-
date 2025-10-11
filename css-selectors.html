@@ -21,7 +21,7 @@
         }
 
         /* Child Selectors  */
-        div > p {
+         div > p {    /*only if p is a direct child of an element  */
             color: blue;
             background-color: brown;
         }
@@ -56,9 +56,16 @@
         }
 
 
-        p:first-child{
+        p:first-child{ /*jaha jaha p apne parent ka first child hain apply this property */
             background-color: aqua;
         }
+
+        /* Attribute selector */
+        [third=a]{
+            background-color: blueviolet;
+
+        }
+
 
     </style>
 </head>
@@ -66,6 +73,7 @@
     <main class="one">
         <p>I am first</p>
         <p>I am second</p>
+        <p third="a">I am third</p>
     </main>
     <div class="red">
         I am a div

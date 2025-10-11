@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Blog</title>
-</head>
-<body>
-      <form>
+<html>
+  <head>
+    <title>document</title>
+  </head>
+  <body>
+    <div>
+    <label for="name">Name: </label>
+    <input type="text" name="username" id="name"> 
+    </div> <br>
 
-        <div>
-        <label for="first name">first name: </label>
-        <input type="text" id="first name" name="first name" >
-        </div>
+    <div>
+    <label for="age">Age: </label>
+    <input type="number" name="age" id="age">
+    </div> <br>
 
-        <div>
-        <label for="second name"> last name: </label>
-        <input type="text" id="second name" name="second name">
-        </div>
+    <div>
+    <label for="gender">Gender: <br> </label>
 
-        <div>
-        <label for="gender">Gender: </label>
 
-        <label for="she">female</label>
-        <input type="radio" id="she" name="gender" >
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
 
-        <label for="he">male</label>
-        <input type="radio" id="he" name="gender">
-        </div>
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
 
-        <div>
-        <label for="hobbies">Write your hobbies: </label>
-        <textarea id="hobbies" rows="1" col="3"></textarea>
-        </div>
+    <label for="none">Prefer not to say</label>
+    <input type="radio" id="none" name="gender" value="none">
+    </div> <br>
 
-        <div>
-     <label for="date">birthdate: </label>
-     <input type="date" id="date" name="birthdate">
-            </div>
-      </form>
+    <label for="date">Birthdate: </label>
+    <input type="date" id="date" name="birthdate"> <br><br>
 
-    </body>
 
-   
+    <label>Enter comment: </label>
+    <textarea rowspan="3" colspan="4"> </textarea>
 
-      
+
+  </body>
+</html>
