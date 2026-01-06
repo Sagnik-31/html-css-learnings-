@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-position</title>
+    <style>
+        /* position can be: static(default),relative,absolute,fixed,sticky */
+        /* except static we can use- top,bottom,left,right,z-index */
+        .element{
+            padding: 20px;
+            height: 300px;
+            width: 400px;
+            background-color: #0071FF;
+            color: white;
+            position: relative; /* maintains gap while absolute (relative to its closest positioned ancestor) doesnt */
+            top: 100px;
+            left: 100px;
+        }
+        /* position "fixed" will have an element fixed intacted to its position for the whole window  */
+        /* position "sticky" will stick or be fixed until the parent container */
+    </style>
+
+</head>
+<body>
+    <div class="element"> Box </div>
+</body>
+</html>
