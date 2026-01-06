@@ -1,0 +1,29 @@
+  
+/*flex-start,flex-end,space-between,space-around,space-evenly,center*/
+
+/* we can also use align-self for individual item positioning */
+
+
+body{
+    min-height: 800px;
+    border: 8px solid black;
+    display: flex; /* inline or block by default */
+
+    flex-direction: row;  /* controls the direction of main axis */
+    justify-content: center; /* main axis (horizontal) */
+    align-items: center;  /*cross axis (vertical),  controls cross axis of every flexbox items individually (each line has its own cross and main axis)*/
+    align-content: center; /*controls cross axis of every flex box item as a whole (only one main and cross axis)*/
+
+    gap: 20px;  /* provides gap around items */
+    flex-wrap: nowrap; /* makes it responsive or nowrap to make it shrink  */
+}
+.box{
+    flex-shrink: 1; /* by default its 1 */
+    flex-grow: 1;  /* by default its 0 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(79, 79, 235);
+}
