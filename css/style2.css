@@ -19,7 +19,7 @@ body{
 }
 .box{
     flex-shrink: 1; /* by default its 1 */
-    flex-grow: 1;  /* by default its 0 */
+    flex-grow: 0;  /* by default its 0 */
     display: flex;
     justify-content: center;
     align-items: center;
