@@ -23,6 +23,14 @@ element.addEventListener('click',()=>{
     element.style.backgroundColor = "brown"
 })
 
+//document.queryselectorAll(h1) -> this will select all h1 element
+// instead of one and stores them in a node list
+
+// const all = document.querySelectorAll("h1")
+// all.forEach((el)=>{
+//     console.log(el)
+// })
+
 // events includes ->
 // click , dblclick , mousedown , mouseup, mousemove, mouseenter, mouseleave
 
