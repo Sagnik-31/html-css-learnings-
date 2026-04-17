@@ -1,4 +1,4 @@
-fetch("https://api.github.com/usrs") //promise ke 3 state -> pending, fullfilled, reject
+fetch("https://api.github.com/users") //promise ke 3 state -> pending, fullfilled, reject
 
 // promise fullfilled
 .then((response)=>{ // convert json string to js object
@@ -14,7 +14,7 @@ fetch("https://api.github.com/usrs") //promise ke 3 state -> pending, fullfilled
     const parent = document.getElementById('parent');
     
 
-    for(let i=0; i<=data.length; i++){
+    for(let i=0; i < data.length; i++){
 
     const image = document.createElement('img');
     image.src = data[i].avatar_url;
