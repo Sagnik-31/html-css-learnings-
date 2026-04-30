@@ -24,6 +24,11 @@ const obj2 = {
 }
 
 
-obj2.__proto__ = obj;
+obj2.__proto__ = obj; 
 
-console.log(obj2.name)
+console.log(obj2.name) // khudke ke upr check kr agar nhi h toh papa ke pass ja
+
+
+console.log(obj.hasOwnProperty("name"))
+
+// class initial
